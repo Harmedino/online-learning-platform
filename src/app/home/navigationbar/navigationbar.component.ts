@@ -10,4 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class NavigationbarComponent {
 
+  mobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
 }
