@@ -4,6 +4,7 @@ import { NavigationbarComponent } from '../navigationbar/navigationbar.component
 import { HeropageComponent } from '../heropage/heropage.component';
 import { OurCoursesComponent } from '../our-courses/our-courses.component';
 import { TestimonialComponent } from '../testimonial/testimonial.component';
+import { PricingComponent } from '../pricing/pricing.component';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { TestimonialComponent } from '../testimonial/testimonial.component';
     HeropageComponent,
     OurCoursesComponent,
     TestimonialComponent,
+    PricingComponent
   ],
 })
 export class HomeComponent {}
