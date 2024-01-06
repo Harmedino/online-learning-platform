@@ -15,6 +15,8 @@ module.exports = {
         white97: "#F7F7F8",
         white99: "#FCFCFD",
         ornge50: "#FF9500",
+        svgbg: "#FFF4E5",
+        planred:"#FFEACC"
       },
     },
   },
