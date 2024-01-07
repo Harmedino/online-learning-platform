@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavigationbarComponent } from '../home/navigationbar/navigationbar.component';
 import { FooterComponent } from '../home/footer/footer.component';
 import { CourseHeroComponent } from '../coursePage/course-hero/course-hero.component';
+import { CurriculumComponent } from '../coursePage/curriculum/curriculum.component';
 
 @Component({
   selector: 'app-course-page',
@@ -10,7 +11,8 @@ import { CourseHeroComponent } from '../coursePage/course-hero/course-hero.compo
   imports: [CommonModule,
     NavigationbarComponent,
     FooterComponent,
-  CourseHeroComponent],
+    CourseHeroComponent,
+  CurriculumComponent],
   templateUrl: './course-page.component.html',
   styleUrl: './course-page.component.css'
 })
