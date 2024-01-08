@@ -5,16 +5,26 @@
   <div class="flex items-center">
     <img src="../../../assets/images/logo.png" alt="logo" class="w-3/4" />
   </div>
-
   <ul class="hidden md:flex items-center space-x-4">
-    <li class="border px-4 py-2 rounded bg-grey-400">
-      <a href="#" class="transition duration-300">Home</a>
+    <li class="">
+      <a routerLink="/" [routerLinkActiveOptions]=" {exact: true}" class=" text-gray-800 cursor-pointer transition  px-4 py-2 rounded-lg  " routerLinkActive="bg-ornge50"
+   >Home</a>
     </li>
-    <li><a href="/courses" class="transition duration-300">Courses</a></li>
-    <li><a href="#" class="transition duration-300">About Us</a></li>
-    <li><a href="#" class="transition duration-300">Pricing</a></li>
-    <li><a href="#" class="transition duration-300">Contact Us</a></li>
+    <li>
+      <a routerLink="/courses" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Courses</a>
+    </li>
+    <li>
+      <a routerLink="/about-us" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">About Us</a>
+    </li>
+    <li>
+      <a routerLink="#" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Pricing</a>
+    </li>
+    <li>
+      <a routerLink="#" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Contact Us</a>
+    </li>
   </ul>
+
+
 
   <div class="flex items-center">
     <button
@@ -42,11 +52,11 @@
     *ngIf="mobileMenuOpen"
   >
     <ul class="flex flex-col items-center space-y-8">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Courses</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a routerLink="#">Home</a></li>
+      <li><a routerLink="#">Courses</a></li>
+      <li><a routerLink="#">About Us</a></li>
+      <li><a routerLink="#">Pricing</a></li>
+      <li><a routerLink="#">Contact Us</a></li>
     </ul>
   </div>
 </div>
