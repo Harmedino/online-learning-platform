@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pricing',
@@ -8,7 +9,21 @@ import { CommonModule } from '@angular/common';
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.css'
 })
-export class PricingComponent {
+export class PricingComponent implements OnInit {
+
+  currentRoute: string | undefined;
+  constructor(private route:ActivatedRoute) {
+
+  }
+
+  ngOnInit() {
+    this.route.url.subscribe(segments => {
+      // Extract the current route
+      this.currentRoute = segments.join('/pricing');
+      console.log(this.currentRoute);
+
+    });
+  }
 
   activeTab: 'monthly' | 'yearly' = 'monthly';
 
