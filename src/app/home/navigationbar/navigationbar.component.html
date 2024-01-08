@@ -7,24 +7,47 @@
   </div>
   <ul class="hidden md:flex items-center space-x-4">
     <li class="">
-      <a routerLink="/" [routerLinkActiveOptions]=" {exact: true}" class=" text-gray-800 cursor-pointer transition  px-4 py-2 rounded-lg  " routerLinkActive="bg-ornge50"
-   >Home</a>
+      <a
+        routerLink="/"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-gray-800 cursor-pointer transition px-4 py-2 rounded-lg"
+        routerLinkActive="bg-ornge50"
+        >Home</a
+      >
     </li>
     <li>
-      <a routerLink="/courses" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Courses</a>
+      <a
+        routerLink="/courses"
+        class="text-gray-800 cursor-pointer px-4 py-2 rounded-lg transition"
+        routerLinkActive="bg-ornge50"
+        >Courses</a
+      >
     </li>
     <li>
-      <a routerLink="/about-us" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">About Us</a>
+      <a
+        routerLink="/about-us"
+        class="text-gray-800 cursor-pointer px-4 py-2 rounded-lg transition"
+        routerLinkActive="bg-ornge50"
+        >About Us</a
+      >
     </li>
     <li>
-      <a routerLink="/pricing" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Pricing</a>
+      <a
+        routerLink="/pricing"
+        class="text-gray-800 cursor-pointer px-4 py-2 rounded-lg transition"
+        routerLinkActive="bg-ornge50"
+        >Pricing</a
+      >
     </li>
     <li>
-      <a routerLink="#" class="text-gray-800  cursor-pointer  px-4 py-2 rounded-lg  transition" routerLinkActive="bg-ornge50">Contact Us</a>
+      <a
+        routerLink="#"
+        class="text-gray-800 cursor-pointer px-4 py-2 rounded-lg transition"
+        routerLinkActive="bg-ornge50"
+        >Contact Us</a
+      >
     </li>
   </ul>
-
-
 
   <div class="flex items-center">
     <button
@@ -52,11 +75,47 @@
     *ngIf="mobileMenuOpen"
   >
     <ul class="flex flex-col items-center space-y-8">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/courses">Courses</a></li>
-      <li><a routerLink="/about-us">About Us</a></li>
-      <li><a routerLink="/pricing">Pricing</a></li>
-      <li><a routerLink="#">Contact Us</a></li>
+      <li>
+        <a
+        [routerLinkActiveOptions]=" {exact: true}"
+        routerLinkActive="bg-ornge50"
+          routerLink="/"
+          class="text-grey30 hover:bg-ornge50 hover:text-white py-2 px-4 rounded transition duration-300"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+        routerLinkActive="bg-ornge50"
+          routerLink="/courses"
+          class="text-grey30 hover:bg-ornge50 hover:text-white py-2 px-4 rounded transition duration-300"
+          >Courses</a
+        >
+      </li>
+      <li>
+        <a
+        routerLinkActive="bg-ornge50"
+          routerLink="/about-us"
+          class="text-grey30 hover:bg-ornge50 hover:text-white py-2 px-4 rounded transition duration-300"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+        routerLinkActive="bg-ornge50"
+          routerLink="/pricing"
+          class="text-grey30 hover:bg-ornge50 hover:text-white py-2 px-4 rounded transition duration-300"
+          >Pricing</a
+        >
+      </li>
+      <li>
+        <a
+        routerLinkActive="bg-ornge50"
+          routerLink="#"
+          class="text-grey30 hover:bg-ornge50 hover:text-white py-2 px-4 rounded transition duration-300"
+          >Contact Us</a
+        >
+      </li>
     </ul>
   </div>
 </div>
