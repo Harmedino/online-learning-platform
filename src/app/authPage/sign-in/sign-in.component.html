@@ -1,0 +1,87 @@
+<div class="h-screen w-full bg-white97">
+
+  <div class="flex flex-col items-center justify-center min-h-screen bg-white rounded-lg p-10">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+      <p class="text-3xl font-semibold mb-4 text-center font-vetnam">Sign Up</p>
+      <p class="text-gray-600 mb-6">Create an account to unlock exclusive features.</p>
+
+      <!-- Form -->
+      <form>
+        <div class="mb-4">
+          <label for="fullName" class="block mb-2.5 font-medium ">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your name" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block mb-2.5 font-medium ">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block mb-2.5 font-medium ">Password</label>
+          <div class="relative">
+            <input type="password" id="password" placeholder="Enter your password" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
+            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.001 15C13.6578 15 15.001 13.6569 15.001 12C15.001 10.3431 13.6578 9 12.001 9C10.3441 9 9.00098 10.3431 9.00098 12C9.00098 13.6569 10.3441 15 12.001 15Z" fill="#4C4C4D"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.32439 11.4467C2.81164 6.97571 7.02889 3.75 12.0015 3.75C16.9718 3.75 21.1874 6.97271 22.6765 11.4405C22.7969 11.8015 22.797 12.1922 22.6769 12.5533C21.1896 17.0243 16.9723 20.25 11.9997 20.25C7.02945 20.25 2.81381 17.0273 1.32472 12.5595C1.20437 12.1985 1.20426 11.8078 1.32439 11.4467ZM17.251 12C17.251 14.8995 14.9005 17.25 12.001 17.25C9.10148 17.25 6.75098 14.8995 6.75098 12C6.75098 9.1005 9.10148 6.75 12.001 6.75C14.9005 6.75 17.251 9.1005 17.251 12Z" fill="#4C4C4D"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="confirmPassword" class="block mb-2.5 font-medium ">Confirm Password</label>
+          <div class="relative">
+            <input type="password" id="password" placeholder="Confirm your password" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
+            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.001 15C13.6578 15 15.001 13.6569 15.001 12C15.001 10.3431 13.6578 9 12.001 9C10.3441 9 9.00098 10.3431 9.00098 12C9.00098 13.6569 10.3441 15 12.001 15Z" fill="#4C4C4D"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.32439 11.4467C2.81164 6.97571 7.02889 3.75 12.0015 3.75C16.9718 3.75 21.1874 6.97271 22.6765 11.4405C22.7969 11.8015 22.797 12.1922 22.6769 12.5533C21.1896 17.0243 16.9723 20.25 11.9997 20.25C7.02945 20.25 2.81381 17.0273 1.32472 12.5595C1.20437 12.1985 1.20426 11.8078 1.32439 11.4467ZM17.251 12C17.251 14.8995 14.9005 17.25 12.001 17.25C9.10148 17.25 6.75098 14.8995 6.75098 12C6.75098 9.1005 9.10148 6.75 12.001 6.75C14.9005 6.75 17.251 9.1005 17.251 12Z" fill="#4C4C4D"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 flex items-center">
+          <input type="checkbox" id="agree" class="mr-2">
+          <label for="agree" class="text-gray-600">I agree with Terms of Use and Privacy Policy</label>
+        </div>
+
+        <button type="submit" class="w-full bg-ornge50 text-white p-2 rounded-lg hover:bg-white hover:text-ornge50 transition duration-300">
+          Sign Up
+        </button>
+      </form>
+
+      <!-- Separator -->
+      <div class="flex items-center my-6">
+        <div class="border-t border-gray-300 flex-grow"></div>
+        <div class="mx-4 text-gray-500">OR</div>
+        <div class="border-t border-gray-300 flex-grow"></div>
+      </div>
+
+      <!-- Sign Up with Google -->
+      <button class="w-full bg-white95 border border-gray-300 p-2 rounded justify-center hover:bg-gray-100 transition duration-300 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-2">
+          <g clip-path="url(#clip0_156_4919)">
+            <path d="M23.7643 12.2764C23.7643 11.4607 23.6982 10.6406 23.5571 9.83807H12.2383V14.4591H18.72C18.451 15.9494 17.5868 17.2678 16.3213 18.1056V21.1039H20.1883C22.4591 19.0139 23.7643 15.9274 23.7643 12.2764Z" fill="#4285F4"/>
+            <path d="M12.2391 24.0008C15.4756 24.0008 18.205 22.9382 20.1936 21.1039L16.3266 18.1055C15.2507 18.8375 13.8618 19.252 12.2435 19.252C9.11291 19.252 6.45849 17.1399 5.50607 14.3003H1.51562V17.3912C3.55274 21.4434 7.70192 24.0008 12.2391 24.0008Z" fill="#34A853"/>
+            <path d="M5.50082 14.3003C4.99816 12.8099 4.99816 11.1961 5.50082 9.70575V6.61481H1.51478C-0.187219 10.0056 -0.187219 14.0004 1.51478 17.3912L5.50082 14.3003Z" fill="#FBBC04"/>
+            <path d="M12.2391 4.74966C13.9499 4.7232 15.6034 5.36697 16.8425 6.54867L20.2685 3.12262C18.0991 1.0855 15.2198 -0.034466 12.2391 0.000808666C7.70192 0.000808666 3.55274 2.55822 1.51562 6.61481L5.50166 9.70575C6.44967 6.86173 9.1085 4.74966 12.2391 4.74966Z" fill="#EA4335"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_156_4919">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        Sign Up with Google
+      </button>
+
+
+      <!-- Already have an account? Login -->
+      <p class="pt-4 text-center">Already have an account? <a routerLink="/login" class="text-ornge50 underline">Login</a></p>
+    </div>
+  </div>
+
+</div>
