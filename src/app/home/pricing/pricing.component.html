@@ -855,16 +855,16 @@
             <span
                   class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
                 >
-                <svg *ngIf="expression" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <svg *ngIf="!svgChange[i]" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                   <path d="M7.88399 20.1164L14.0004 14M20.1168 7.88359L14.0004 14M14.0004 14L7.88399 7.88359M14.0004 14L20.1168 20.1164" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <svg *ngIf="!expression" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <svg *ngIf="svgChange[i]" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                   <path d="M7 14H14M21 14H14M14 14V7M14 14V21" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 </span>
           </div>
         </div>
-        <hr *ngIf="expression">
+        <hr *ngIf="expression === i">
         <p class="" *ngIf="expression === i">{{item.answer}}</p>
 
       </div>
