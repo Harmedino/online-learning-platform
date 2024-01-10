@@ -12,7 +12,20 @@ import { ActivatedRoute } from '@angular/router';
 export class PricingComponent implements OnInit {
 
   currentRoute: string | undefined;
-  expression: boolean = false
+  expression: number | boolean = false;
+
+  faq: { question: string, answer: string }[] = [
+    {question: 'Can I enroll in multiple courses at once?',
+    answer:'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.'},
+    {question: 'Can I enroll in multiple courses at once?',
+    answer:'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.'},
+    {question: 'Can I enroll in multiple courses at once?',
+    answer:'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.'},
+    {question: 'Can I enroll in multiple courses at once?',
+    answer:'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.'},
+    {question: 'Can I enroll in multiple courses at once?',
+    answer:'Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.'},
+  ]
   constructor(private route:ActivatedRoute) {
 
   }
@@ -32,7 +45,12 @@ export class PricingComponent implements OnInit {
     return this.activeTab = tab;
   }
 
-  faqHandler() {
-    this.expression = !this.expression
+  faqHandler(index:any) {
+
+    if (this.expression === index) {
+    this.expression = false
+    } else {
+      this.expression = index
+    }
   }
 }
