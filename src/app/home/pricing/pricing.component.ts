@@ -67,7 +67,6 @@ export class PricingComponent implements OnInit {
     } else {
       this.expression = index;
     }
-    alert(this.svgChange)
     this.svgChange[index] = !this.svgChange[index];
   }
 }
