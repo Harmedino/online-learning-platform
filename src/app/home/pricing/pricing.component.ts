@@ -12,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PricingComponent implements OnInit {
 
   currentRoute: string | undefined;
+  expression: boolean = false
   constructor(private route:ActivatedRoute) {
 
   }
@@ -29,5 +30,9 @@ export class PricingComponent implements OnInit {
 
   setActiveTab(tab: 'monthly' | 'yearly'): string {
     return this.activeTab = tab;
+  }
+
+  faqHandler() {
+    this.expression = !this.expression
   }
 }
