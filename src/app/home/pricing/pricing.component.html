@@ -1,5 +1,5 @@
 <div class="benefit w-full py-14 space-y-8">
-  <span class="font-semibold text-3xl lg:text-4xl"  *ngIf="currentRoute !=='pricing'">Our Pricing</span>
+  <span class="font-semibold text-3xl  lg:text-4xl"  *ngIf="currentRoute !=='pricing'">Our Pricing</span>
   <div class="flex justify-between md:flex-row flex-col md:space-y-0 space-y-3">
     <p class="md:w-3/4 text-grey35 lg:text-lg md:text-base text-sm py-3" *ngIf="currentRoute !=='pricing'">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -47,7 +47,7 @@
               Free Plan
             </button>
 
-            <h2 class="font-semibold text-3xl">
+            <h2 class="font-semibold text-3xl flex flex-col items-center">
               <span
                 class="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-vetnam"
                 >0$</span
@@ -242,7 +242,7 @@
               Pro Plan
             </button>
 
-            <h2 class="font-semibold text-3xl">
+            <h2 class="font-semibold text-3xl flex flex-col items-center ">
               <span
                 class="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-vetnam"
                 >79$</span
@@ -447,7 +447,7 @@
               Free Plan
             </button>
 
-            <h2 class="font-semibold text-3xl">
+            <h2 class="font-semibold text-3xl flex flex-col items-center">
               <span
                 class="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-vetnam"
                 >0$</span
@@ -642,7 +642,7 @@
               Pro Plan
             </button>
 
-            <h2 class="font-semibold text-3xl">
+            <h2 class="font-semibold text-3xl flex flex-col items-center">
               <span
                 class="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-vetnam"
                 >79$</span
@@ -833,5 +833,83 @@
         </div>
       </div>
     </div>
+  </section>
+
+
+  <section class="bg-white flex flex-col md:flex-row items-center justify-around p-6 md:p-20 lg:p-24">
+
+    <div class="md:w-3/12 w-full">
+      <p class="text-3xl font-semibold">Frequently Asked Questions</p>
+      <p>Still you have any questions? Contact our Team via support&#64;skillbridge.com</p>
+      <br><br>
+      <button class="border rounded py-4 px-6">
+        See All FAQ’s
+      </button>
+    </div>
+    <div  class="md:w-3/5 w-full  space-y-10">
+
+      <div class="space-y-3 border rounded-lg py-8 px-12">
+        <div class="flex items-center justify-between">
+          <p>Can I enroll in multiple courses at once?</p>
+          <div>
+            <span
+                  class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path d="M7.88399 20.1164L14.0004 14M20.1168 7.88359L14.0004 14M14.0004 14L7.88399 7.88359M14.0004 14L20.1168 20.1164" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+          </div>
+        </div>
+        <hr>
+        <p class="">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+
+      </div>
+      <div class="border rounded-lg p-6 md:px-12 md:py-8 flex items-center justify-between">
+        <p class="pr-1">What kind of support can I expect from instructors?</p>
+        <span
+                  class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path d="M7 14H14M21 14H14M14 14V7M14 14V21" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+
+      </div>
+      <div class="border rounded-lg p-6 md:px-12 md:py-8 flex items-center justify-between">
+        <p class="pr-1">Are the courses self-paced or do they have specific start and end dates?</p>
+        <span
+                  class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path d="M7 14H14M21 14H14M14 14V7M14 14V21" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+
+      </div>
+      <div class="border rounded-lg p-6 md:px-12 md:py-8 flex items-center justify-between">
+        <p class="pr-1">Are there any prerequisites for the courses?</p>
+        <span
+                  class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path d="M7 14H14M21 14H14M14 14V7M14 14V21" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+
+      </div>
+      <div class="border rounded-lg p-6 md:px-12 md:py-8 flex items-center justify-between">
+        <p class="pr-1">Can I download the course materials for offline access?</p>
+        <span
+                  class="inline-block mr-2 bg-svgbg p-1 items-start gap-10 rounded-lg bg-Orange-95"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path d="M7 14H14M21 14H14M14 14V7M14 14V21" stroke="#262626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+
+      </div>
+    </div>
+
   </section>
 </div>
