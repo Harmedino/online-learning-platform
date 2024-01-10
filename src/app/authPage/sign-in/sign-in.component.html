@@ -2,16 +2,11 @@
 
   <div class="flex flex-col items-center justify-center min-h-screen bg-white rounded-lg p-10">
     <div class="bg-white p-8 rounded-lg shadow-md w-96">
-      <p class="text-3xl font-semibold mb-4 text-center font-vetnam">Sign Up</p>
-      <p class="text-gray-600 mb-6">Create an account to unlock exclusive features.</p>
+      <p class="text-3xl font-semibold mb-4 text-center font-vetnam">Login</p>
+      <p class=" mb-6">Welcome back! Please log in to access your account.</p>
 
       <!-- Form -->
       <form>
-        <div class="mb-4">
-          <label for="fullName" class="block mb-2.5 font-medium ">Full Name</label>
-          <input type="text" id="fullName" placeholder="Enter your name" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
-        </div>
-
         <div class="mb-4">
           <label for="email" class="block mb-2.5 font-medium ">Email</label>
           <input type="email" id="email" placeholder="Enter your email" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
@@ -30,26 +25,8 @@
           </div>
         </div>
 
-        <div class="mb-4">
-          <label for="confirmPassword" class="block mb-2.5 font-medium ">Confirm Password</label>
-          <div class="relative">
-            <input type="password" id="password" placeholder="Confirm your password" class="w-full border  p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50">
-            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12.001 15C13.6578 15 15.001 13.6569 15.001 12C15.001 10.3431 13.6578 9 12.001 9C10.3441 9 9.00098 10.3431 9.00098 12C9.00098 13.6569 10.3441 15 12.001 15Z" fill="#4C4C4D"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.32439 11.4467C2.81164 6.97571 7.02889 3.75 12.0015 3.75C16.9718 3.75 21.1874 6.97271 22.6765 11.4405C22.7969 11.8015 22.797 12.1922 22.6769 12.5533C21.1896 17.0243 16.9723 20.25 11.9997 20.25C7.02945 20.25 2.81381 17.0273 1.32472 12.5595C1.20437 12.1985 1.20426 11.8078 1.32439 11.4467ZM17.251 12C17.251 14.8995 14.9005 17.25 12.001 17.25C9.10148 17.25 6.75098 14.8995 6.75098 12C6.75098 9.1005 9.10148 6.75 12.001 6.75C14.9005 6.75 17.251 9.1005 17.251 12Z" fill="#4C4C4D"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-4 flex items-center">
-          <input type="checkbox" id="agree" class="mr-2">
-          <label for="agree" class="text-gray-600">I agree with Terms of Use and Privacy Policy</label>
-        </div>
-
         <button type="submit" class="w-full bg-ornge50 text-white p-2 rounded-lg hover:bg-white hover:text-ornge50 transition duration-300">
-          Sign Up
+          Login
         </button>
       </form>
 
@@ -60,7 +37,7 @@
         <div class="border-t border-gray-300 flex-grow"></div>
       </div>
 
-      <!-- Sign Up with Google -->
+      <!-- Login with Google -->
       <button class="w-full bg-white95 border border-gray-300 p-2 rounded justify-center hover:bg-gray-100 transition duration-300 flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-2">
           <g clip-path="url(#clip0_156_4919)">
@@ -75,12 +52,11 @@
             </clipPath>
           </defs>
         </svg>
-        Sign Up with Google
+        Login with Google
       </button>
 
-
-      <!-- Already have an account? Login -->
-      <p class="pt-4 text-center">Already have an account? <a routerLink="/login" class="text-ornge50 underline">Login</a></p>
+      <!-- Don't have an account? Sign Up -->
+      <p class="pt-4 text-center">Don't have an account? <a routerLink="/register" class="text-ornge50 underline">Sign Up</a></p>
     </div>
   </div>
 
