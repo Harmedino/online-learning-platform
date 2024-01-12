@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
-import { AppComponent } from '../../app.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -14,5 +13,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './sign-up.component.css',
 })
 export class SignUpComponent {
-  onSubmit(form: NgForm) {}
+  onSubmit(form: NgForm) {
+    console.log(form.value)
+  }
 }

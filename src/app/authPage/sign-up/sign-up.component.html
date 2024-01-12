@@ -83,9 +83,13 @@
           <div class="relative">
             <input
               type="password"
-              id="password"
+              id="confirmPassword"
               placeholder="Confirm your password"
               class="w-full border p-5 rounded-lg bg-white95 focus:outline-none focus:border-ornge50"
+              name="confirmPassword"
+              ngModel
+              #confirmPassword= 'ngModel'
+
             />
             <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
               <svg
